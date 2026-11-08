@@ -1,0 +1,1192 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Sidra Tul Muntaha - Graphic Designer"
+    >
+
+    <meta
+        name="author"
+        content="Sidra Tul Muntaha"
+    >
+
+    <title>Sidra Tul Muntaha | Graphic Designer</title>
+
+    <link
+        rel="shortcut icon"
+        type="image/x-icon"
+        href="img/favicon.ico"
+    >
+
+    <!-- Themify Icons CSS -->
+    <link
+        rel="stylesheet"
+        href="css/themify-icons.css"
+    >
+
+    <!-- Elegant Line Icons CSS -->
+    <link
+        rel="stylesheet"
+        href="css/elegant-line-icons.css"
+    >
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="css/bootstrap.min.css"
+    >
+
+    <!-- Slicknav CSS -->
+    <link
+        rel="stylesheet"
+        href="css/slicknav.min.css"
+    >
+
+    <!-- Animate CSS -->
+    <link
+        rel="stylesheet"
+        href="css/animate.min.css"
+    >
+
+    <!-- OWL Carousel CSS -->
+    <link
+        rel="stylesheet"
+        href="css/owl.carousel.css"
+    >
+
+    <!-- Venobox CSS -->
+    <link
+        rel="stylesheet"
+        href="css/venobox.css"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
+    <style>
+
+        /*
+        ============================================================
+        EXISTING UI PRESERVED
+        Only portfolio title/button styling added.
+        ============================================================
+        */
+
+        /* HERO — same design, only scaled so the content fits cleanly */
+        .hero-section {
+            min-height: 620px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero-content .heading {
+            font-size: 50px !important;
+            line-height: 1.06 !important;
+            margin-bottom: 22px !important;
+        }
+
+        .hero-content .sub-heading {
+            font-size: 21px !important;
+            line-height: 1.2 !important;
+            margin-bottom: 14px !important;
+        }
+
+        .hero-content .desc {
+            max-width: 690px;
+            font-size: 15px !important;
+            line-height: 1.75 !important;
+            margin-bottom: 28px !important;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar-brand:hover {
+            text-decoration: none;
+        }
+
+        /* Behance Portfolio hover: title + button appear on the image */
+        .work-thumb {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.52);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .work-overlay .work-title {
+            display: block;
+            margin: 0;
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.35;
+            font-weight: 700;
+            transform: translateY(15px);
+            transition: all 0.3s ease;
+        }
+
+        .work-overlay .work-view-btn {
+            display: inline-block;
+            padding: 7px 16px;
+            background: #ffffff;
+            color: #111111;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.2;
+            border: 0;
+            border-radius: 4px;
+            text-decoration: none;
+            transform: translateY(15px);
+            transition: all 0.3s ease;
+        }
+
+        .work-overlay .work-view-btn:hover {
+            background: #f2f2f2;
+            color: #111111;
+            text-decoration: none;
+        }
+
+        .work-box:hover .work-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .work-box:hover .work-overlay .work-title,
+        .work-box:hover .work-overlay .work-view-btn {
+            transform: translateY(0);
+        }
+
+        /* Remove the old title/button area below each image */
+        .work-info {
+            display: none !important;
+        }
+
+        .work-box img {
+            width: 100%;
+            display: block;
+        }
+
+        @media (max-width: 991px) {
+            .hero-content .heading {
+                font-size: 44px !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .hero-section {
+                min-height: 620px;
+            }
+
+            .hero-content .sub-heading {
+                font-size: 20px !important;
+            }
+
+            .hero-content .heading {
+                font-size: 40px !important;
+                line-height: 1.08 !important;
+            }
+
+            .hero-content .desc {
+                font-size: 15px !important;
+                line-height: 1.7 !important;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body
+    data-spy="scroll"
+    data-target="#navmenu"
+    data-offset="70"
+>
+
+
+    <!-- PRELOADER -->
+
+    <div class="site-preloader-wrap">
+
+        <div class="spinner-wrap">
+
+            <div class="spinner"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header
+        id="header"
+        class="header-section"
+    >
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <a
+                    href="#home"
+                    class="navbar-brand"
+                >
+                    <img
+                        src="img/logo.png"
+                        alt="Sidra Tul Muntaha"
+                    >
+                </a>
+
+
+                <div class="d-flex menu-wrap">
+
+                    <div
+                        id="navmenu"
+                        class="mainmenu"
+                    >
+
+                        <ul class="nav">
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link active"
+                                    href="#home"
+                                >
+                                    Home
+                                    <span class="sr-only">
+                                        (current)
+                                    </span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="#about"
+                                >
+                                    About
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="#services"
+                                >
+                                    Services
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="#portfolio"
+                                >
+                                    Behance Portfolio
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="#reviews"
+                                >
+                                    Experience
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a
+                                    data-scroll
+                                    class="nav-link"
+                                    href="#contact"
+                                >
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- END HEADER -->
+
+
+    <!-- HERO -->
+
+    <section
+        id="home"
+        class="hero-section d-flex align-items-center"
+    >
+
+        <div class="container">
+
+            <div class="row hero-wrap">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-content mt-50">
+
+                        <h3
+                            class="sub-heading wow fadeInUp"
+                            data-wow-delay="200ms"
+                        >
+                            Hey, I AM Sidra Tul Muntaha...
+                        </h3>
+
+                        <h1
+                            class="heading wow fadeInUp"
+                            data-wow-delay="300ms"
+                        >
+                            GRAPHIC DESIGNER | BRAND IDENTITY DESIGNER
+                        </h1>
+
+                        <p
+                            class="desc wow fadeInUp"
+                            data-wow-delay="400ms"
+                        >
+                            Creative and detail-oriented Graphic Designer passionate about transforming ideas
+                            into visually compelling designs. Experienced in creating logos, branding
+                            materials, social media graphics, YouTube thumbnails, business cards,
+                            certificates, resumes and invitation cards.
+                        </p>
+
+                        <!-- DOWNLOAD CV BUTTON -->
+
+                        <a
+                            href="/img/sidra.pdf"
+                            class="default-btn wow fadeInUp"
+                            data-wow-delay="500ms"
+                            download
+                        >
+                            Download CV
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END HERO -->
+
+
+    <!-- ABOUT -->
+
+    <section
+        id="about"
+        class="about-section bd-bottom padding"
+    >
+
+        <div class="container">
+
+            <div class="row about-wrap d-flex align-items-center">
+
+
+                <div class="col-lg-5 sm-padding">
+
+                    <div
+                        class="about-bg wow fadeInLeft"
+                        data-wow-delay="100ms"
+                    >
+
+                        <img
+                            src="/img/about.jpeg"
+                            alt="Sidra Tul Muntaha"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7 sm-padding">
+
+                    <div class="about-content">
+
+                        <h2>
+
+                            <span
+                                class="wow fadeInUp"
+                                data-wow-delay="100ms"
+                            >
+                                I'm a Graphic Designer
+                            </span>
+
+                            <br>
+
+                            <span
+                                class="wow fadeInUp"
+                                data-wow-delay="300ms"
+                            >
+                                & Brand Identity Designer.
+                            </span>
+
+                        </h2>
+
+
+                        <p
+                            class="wow fadeInUp"
+                            data-wow-delay="500ms"
+                        >
+                            I'm Sidra Tul Muntaha, a Graphic Designer focused on creating creative,
+                            modern and professional visual designs for brands, social media and
+                            promotional materials.
+                        </p>
+
+
+                        <p
+                            class="wow fadeInUp"
+                            data-wow-delay="600ms"
+                        >
+                            I specialize in logo design, YouTube thumbnails, business cards, certificates,
+                            resumes, invitation cards, branding materials and social media graphics.
+                        </p>
+
+
+                        <p
+                            class="wow fadeInUp"
+                            data-wow-delay="700ms"
+                        >
+                            I combine creativity, modern design trends and attention to detail with typography,
+                            color combinations, layout and visual composition principles to create
+                            designs that effectively communicate a brand's message.
+                        </p>
+
+
+                    </div>
+
+
+                    <!-- SKILLS -->
+
+                    <ul
+                        class="skill-items wow fadeInUp"
+                        data-wow-delay="800ms"
+                    >
+
+                        <li class="skill-item">
+                            <h5>Logo Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 95%;">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>YouTube Thumbnail Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 95%;">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Business Card Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Certificate Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Resume Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 95%;">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Invitation Card Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Branding & Visual Identity</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <h5>Social Media Design</h5>
+                            <div class="progress">
+                                <div class="progress-bar wow slideInLeft" data-wow-duration="2000ms"
+                                    role="progressbar" style="width: 85%;">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="cv-btn">
+
+                        <a
+                            href="mailto:anummusfira75@gmail.com"
+                            class="default-btn wow fadeInUp"
+                            data-wow-delay="900ms"
+                        >
+                            Get In Touch
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END ABOUT -->
+
+
+    <!-- SERVICES -->
+
+    <section
+        id="services"
+        class="service-section bg-grey bd-bottom padding"
+    >
+        <div class="container">
+            <div class="section-heading text-center mb-40">
+                <h2 class="wow fadeInUp">Professional Services</h2>
+            </div>
+
+            <div class="service-wrap row">
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
+                    <div class="service-item text-center">
+                        <i class="icon-pencil"></i>
+                        <h3><span>Logo Design</span></h3>
+                        <p>Creative and professional logo designs that build a strong and memorable visual identity for brands.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+                    <div class="service-item text-center">
+                        <i class="icon-picture"></i>
+                        <h3><span>Social Media & Thumbnails</span></h3>
+                        <p>Eye-catching social media graphics and YouTube thumbnails designed to communicate ideas clearly.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+                    <div class="service-item text-center">
+                        <i class="icon-credit-card"></i>
+                        <h3><span>Business & Print Design</span></h3>
+                        <p>Professional business cards, certificates, resumes and other print-ready visual materials.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
+                    <div class="service-item text-center">
+                        <i class="icon-layers"></i>
+                        <h3><span>Branding & Identity</span></h3>
+                        <p>Brand identity materials using typography, color combinations, layouts and visual composition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SERVICES -->
+
+
+    <!-- COUNTERS -->
+
+    <section class="counter-section padding overlay">
+        <div class="container">
+            <div class="counter-wrap row">
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="100ms">
+                    <div class="counter-item text-center">
+                        <i class="icon-picture"></i>
+                        <h3 class="counter">10</h3>
+                        <h4>Brand Identity Projects</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
+                    <div class="counter-item text-center">
+                        <i class="icon-pencil"></i>
+                        <h3 class="counter">6</h3>
+                        <h4>Design Services</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
+                    <div class="counter-item text-center">
+                        <i class="icon-layers"></i>
+                        <h3 class="counter">8</h3>
+                        <h4>Creative Skills</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="700ms">
+                    <div class="counter-item text-center">
+                        <i class="icon-laptop"></i>
+                        <h3 class="counter">2</h3>
+                        <h4>Design Tools</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END COUNTERS -->
+
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="work-section bd-bottom padding">
+        <div class="container">
+
+            <div class="section-heading text-center mb-40">
+                <h2 class="wow fadeInUp" data-wow-delay="100ms">Work Portfolio</h2>
+            </div>
+
+            <div class="work-items-wrap">
+                <div class="work-titles"></div>
+
+                <ul class="work-filter mb-30 wow fadeInUp" data-wow-delay="300ms">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".branding">Branding</li>
+                    <li data-filter=".social">Social Media</li>
+                    <li data-filter=".print">Print Design</li>
+                    <li data-filter=".creative">Creative Design</li>
+                </ul>
+
+                <div class="row work-items wow fadeInUp" data-wow-delay="500ms">
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item branding">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work1.jpeg" alt="Logo Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Logo Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item social">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work2.jpeg" alt="YouTube Thumbnail Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">YouTube Thumbnail Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item print">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work3.jpeg" alt="Business Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Business Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item branding">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work4.jpeg" alt="Brand Identity Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Brand Identity Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item print">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work5.jpeg" alt="Certificate Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Certificate Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work6.jpeg" alt="Creative Graphic Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Creative Graphic Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item print">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work7.jpeg" alt="Resume Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Resume Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work8.jpeg" alt="Invitation Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Invitation Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                     <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work9.jpeg" alt="Invitation Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Invitation Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                     <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work10.jpeg" alt="Invitation Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Invitation Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                      <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work11.jpeg" alt="Invitation Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Invitation Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                      <div class="col-md-4 col-sm-6 xs-padding single-item creative">
+                        <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer" class="work-box">
+                            <div class="work-thumb">
+                                <img src="img/work12.jpeg" alt="Invitation Card Design">
+                                <div class="work-overlay">
+                                    <h4 class="work-title">Invitation Card Design</h4>
+                                    <span class="work-view-btn">View</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END PORTFOLIO -->
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="reviews" class="testimonial-section bg-grey bd-bottom padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 d-none d-lg-block d-md-block">
+                    <div class="clients-thumb">
+                        <div class="ct-thumb thumb-1"></div>
+                        <div class="ct-thumb thumb-2"></div>
+                        <div class="ct-thumb thumb-3"></div>
+                        <div class="ct-thumb thumb-4"></div>
+                        <div class="ct-thumb thumb-5"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="section-heading">
+                        <h2 class="wow fadeInUp" data-wow-delay="100ms">Professional Experience</h2>
+                    </div>
+
+                    <div id="testimonial-carousel" class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="300ms">
+
+                        <div class="testi-item">
+                            <p>Designed creative social media posts, banners, flyers and promotional graphics according to client requirements and brand identity.</p>
+                            <div class="testi-thumb">
+                                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=300&q=80" alt="Brand Identity Designer">
+                                <h3>Brand Identity Designer – Freelance<span>2025 – Present</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="testi-item">
+                            <p>Created modern and professional designs using Canva and Adobe Photoshop, with attention to typography, color combinations and visual composition.</p>
+                            <div class="testi-thumb">
+                                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=300&q=80" alt="Graphic Design">
+                                <h3>Graphic Design<span>Freelance</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="testi-item">
+                            <p>Developed logo concepts, branding materials and visual content while applying typography, color combinations, layout and visual composition principles.</p>
+                            <div class="testi-thumb">
+                                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=300&q=80" alt="Logo and Branding Design">
+                                <h3>Logo & Branding Design<span>Freelance</span></h3>
+                            </div>
+                        </div>
+
+                        <div class="testi-item">
+                            <p>Built a professional portfolio featuring 10+ brand identity projects and creative work including logos, thumbnails, business cards, certificates, resumes and invitation cards.</p>
+                            <div class="testi-thumb">
+                                <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=300&q=80" alt="Creative Design Projects">
+                                <h3>Creative Design Projects<span>10+ Brand Identity Projects</span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END EXPERIENCE -->
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section padding">
+        <div class="container">
+            <div class="contact-wrapper d-flex align-items-center row">
+
+                <div class="col-lg-5 col-md-6 sm-padding">
+                    <div class="contact-info">
+                        <div class="section-heading mb-20">
+                            <h2 class="wow fadeInUp" data-wow-delay="100ms">Get In Touch</h2>
+                        </div>
+
+                        <p class="wow fadeInUp" data-wow-delay="300ms">
+                            Have a graphic design, branding or visual content project? Let's discuss how I can help create professional and visually compelling designs.
+                        </p>
+
+                        <p class="wow fadeInUp" data-wow-delay="400ms">
+                            <strong>Email:</strong>
+                            <a href="mailto:anummusfira75@gmail.com">anummusfira75@gmail.com</a>
+                            <br>
+                            <strong>Phone:</strong>
+                            <a href="tel:+923154332059">03154332059</a>
+                            <br>
+                            <strong>Phone:</strong>
+                            <a href="tel:+923134509049">03134509049</a>
+                            <br>
+                            <strong>Location:</strong>
+                            Sheikhupura, Pakistan
+                        </p>
+
+                        <p class="wow fadeInUp" data-wow-delay="500ms">
+                            <strong>Specialization:</strong>
+                            Logo Design • Branding • Social Media Design • Print Design
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6 sm-padding">
+                    <div class="contact-form">
+                        <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
+                            <div class="form-group colum-row row wow fadeInUp" data-wow-delay="500ms">
+                                <div class="col-sm-6">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row wow fadeInUp" data-wow-delay="700ms">
+                                <div class="col-md-12">
+                                    <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row wow fadeInUp" data-wow-delay="900ms">
+                                <div class="col-md-12">
+                                    <button id="submit" class="default-btn" type="submit">Send Message</button>
+                                </div>
+                            </div>
+
+                            <div id="form-messages" class="alert" role="alert"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTACT -->
+
+
+    <!-- GET TO WORK -->
+
+    <section class="widget-section padding">
+        <div class="container">
+            <div class="widget-content text-center">
+                <h2 class="wow fadeInUp" data-wow-delay="100ms">Let's get to work <span>!</span></h2>
+                <a class="mb-15 wow fadeInUp" data-wow-delay="200ms" href="mailto:anummusfira75@gmail.com">anummusfira75@gmail.com</a>
+                <a href="tel:+923154332059" class="wow fadeInUp" data-wow-delay="300ms">03154332059 / 03134509049</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- END GET TO WORK -->
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrap row">
+
+                <div class="col-md-6">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://www.behance.net/gallery/255645681/Sidra-Tul-Muntaha-Graphic" target="_blank" rel="noopener noreferrer">
+                                Behance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:anummusfira75@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="tel:+923154332059">Phone</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="copyright">
+                        <p>&copy; <span id="year"></span> Sidra Tul Muntaha. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+
+
+    <!-- SCROLL TO TOP -->
+
+    <a
+        data-scroll
+        href="#header"
+        id="scroll-to-top"
+    >
+        <i class="ti-angle-up"></i>
+    </a>
+
+
+    <!-- jQuery -->
+
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- Modernizr -->
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- Bootstrap -->
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Slicknav -->
+
+    <script src="js/vendor/jquery.slicknav.min.js"></script>
+
+    <!-- OWL Carousel -->
+
+    <script src="js/vendor/owl.carousel.min.js"></script>
+
+    <!-- Counterup -->
+
+    <script src="js/vendor/jquery.counterup.min.js"></script>
+
+    <!-- Waypoints -->
+
+    <script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
+
+    <!-- Venobox -->
+
+    <script src="js/vendor/venobox.min.js"></script>
+
+    <!-- Images Loaded -->
+
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Isotope -->
+
+    <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
+
+    <!-- Smooth Scroll -->
+
+    <script src="js/vendor/smooth-scroll.min.js"></script>
+
+    <!-- WOW -->
+
+    <script src="js/vendor/wow.min.js"></script>
+
+    <!-- Contact -->
+
+    <script src="js/contact.js"></script>
+
+    <!-- Main JS -->
+
+    <script src="js/main.js"></script>
+
+
+    <!-- CURRENT YEAR -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                var yearElement =
+                    document.getElementById("year");
+
+                if (yearElement) {
+
+                    yearElement.textContent =
+                        new Date().getFullYear();
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
